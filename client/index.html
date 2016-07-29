@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maestro Label Designer</title>
+    <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </head>
+  <body>
+    <div class="grid-frame">
+
+      <div zf-panel position="left" id="sidebar" class="medium-grid-block collapse medium-3 large-2 vertical">
+        <div class="grid-content">
+          <img src="assets/images/logo.png">
+          <div ng-include="" src=" '/partials/sidebar-home.html' "></div>
+        </div>
+      </div>
+
+      <div class="grid-block collapse vertical">
+        <div id="header">
+          <div class="menu-group primary">
+            <div class="menu-group-left"></div>
+            <div class="menu-group-right">
+              <ul class="icon-left primary menu-bar">
+                <!-- <li><a href="#"><img zf-iconic="" icon="person" size="small" class="iconic-color-primary">John Doe</a></li> -->
+                <li ui-sref-active="is-active"><a zf-open="createAccount">Create Account</a></li>
+                <li><a zf-open="signIn">Sign In</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div ui-view class="grid-content vertical"></div>
+      </div>
+
+      <div ng-include="" src=" '/partials/create-account.html' "></div>
+      <div ng-include="" src=" '/partials/sign-in.html' "></div>
+
+    </div>
+  </body>
+</html>

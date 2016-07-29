@@ -1,0 +1,40 @@
+#templates {
+
+	margin-top: 1em;
+
+	h3 {
+		font-weight: bold;
+	}
+
+	#search-copy {
+
+		padding: 2.5rem 0;
+
+		h5 {
+			font-weight: bold;
+		}
+	}
+
+	#blank-search {
+		padding-bottom: 2.5rem;
+	}
+
+	#blank-results {
+
+		p {
+			font-size: .9rem;
+			color: #777777;
+			border-bottom: 1px solid #D5D5D5;
+		}	
+	}
+
+	.card {
+
+		.card-section{
+			text-align: left;
+			border-top: 1px solid $gray;
+			padding: .9rem;
+		}
+	}
+
+}
